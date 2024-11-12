@@ -1,0 +1,133 @@
+/* About Page Base Styling */
+.about-page {
+    font-family: var(--font-family-base);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Light background for better readability */
+    padding-bottom: 40px; /* Add padding at the bottom */
+}
+
+/* About Banner Styling */
+.about-banner {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for a lifted effect */
+    position: relative; /* Allow for visual effects */
+}
+
+    .about-banner h1 {
+        font-size: 3rem;
+        margin: 0;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Text shadow for better contrast */
+        animation: fadeInDown 1s ease-out; /* Simple fade-in animation */
+    }
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* About Content Styling */
+.about-content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: white; /* White background for content section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Prevent overflow */
+}
+
+    .about-content section {
+        margin-bottom: 40px;
+        transition: transform 0.3s ease; /* Smooth effect */
+    }
+
+        .about-content section:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+        }
+
+    .about-content h2 {
+        font-size: 2rem;
+        color: var(--dark-color);
+        margin-bottom: 20px;
+        border-bottom: 2px solid var(--primary-color); /* Underline for emphasis */
+        padding-bottom: 5px; /* Space between text and underline */
+    }
+
+    .about-content p {
+        font-size: 1.1rem;
+        color: var(--text-color);
+        margin-bottom: 20px; /* Space between paragraphs */
+        line-height: 1.8; /* Increase line height for better readability */
+    }
+
+    .about-content ul {
+        list-style-type: disc;
+        padding-left: 20px; /* Add padding to list items */
+        margin-bottom: 20px; /* Space below the list */
+    }
+
+    .about-content li {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .about-content a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: bold; /* Bold links for emphasis */
+        transition: color 0.3s; /* Smooth color transition */
+    }
+
+        .about-content a:hover {
+            text-decoration: underline;
+            color: var(--link-hover-color); /* Change color on hover */
+        }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-content h2 {
+        font-size: 1.75rem;
+    }
+
+    .about-content p,
+    .about-content li {
+        font-size: 1rem;
+    }
+
+    .about-content {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-banner {
+        padding: 40px 15px; /* Reduce padding for very small screens */
+    }
+
+        .about-banner h1 {
+            font-size: 2rem;
+        }
+
+    .about-content {
+        padding: 10px; /* Further adjust padding */
+    }
+
+        .about-content h2 {
+            font-size: 1.5rem;
+        }
+}
