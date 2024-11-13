@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/lifetimegroup.ca/static/css/main.645b577d.css",
-    "main.js": "/lifetimegroup.ca/static/js/main.79742ce1.js",
-    "static/media/pos-paper.jpeg": "/lifetimegroup.ca/static/media/pos-paper.52a5865910de62c001e7.jpeg",
-    "static/media/Ads.jpeg": "/lifetimegroup.ca/static/media/Ads.f3b3f40a33b3206c6e57.jpeg",
-    "static/media/Bussines card.jpeg": "/lifetimegroup.ca/static/media/Bussines card.cc6f76d947ed24fb2b75.jpeg",
+    "main.js": "/lifetimegroup.ca/static/js/main.8a79ca67.js",
+    "static/media/Ads.jpeg": "/lifetimegroup.ca/static/media/Ads.7b501a2fd8686eafeb3a.jpeg",
+    "static/media/Bussines card.jpeg": "/lifetimegroup.ca/static/media/Bussines card.662111b615702dac6b88.jpeg",
+    "static/media/pos-paper.jpeg": "/lifetimegroup.ca/static/media/pos-paper.1fa15bcf59c8efd5f135.jpeg",
+    "static/media/ads4.jpeg": "/lifetimegroup.ca/static/media/ads4.b29bd1bf8ef0cc8992fe.jpeg",
     "static/media/bpa-free-thermal-paper.jpeg": "/lifetimegroup.ca/static/media/bpa-free-thermal-paper.e743fef873e05002a585.jpeg",
-    "static/media/t-shirt-bags.jpeg": "/lifetimegroup.ca/static/media/t-shirt-bags.58693bfe494b6397cb13.jpeg",
+    "static/media/t-shirt-bags.jpeg": "/lifetimegroup.ca/static/media/t-shirt-bags.3a3423da6bc006bc9dc2.jpeg",
     "static/media/nitrile-gloves.jpg": "/lifetimegroup.ca/static/media/nitrile-gloves.d0a2302b4f6c961fa534.jpg",
     "static/media/main-logo.jpeg": "/lifetimegroup.ca/static/media/main-logo.90e8e4b0820bcf2fb1ad.jpeg",
     "index.html": "/lifetimegroup.ca/index.html",
     "main.645b577d.css.map": "/lifetimegroup.ca/static/css/main.645b577d.css.map",
-    "main.79742ce1.js.map": "/lifetimegroup.ca/static/js/main.79742ce1.js.map"
+    "main.8a79ca67.js.map": "/lifetimegroup.ca/static/js/main.8a79ca67.js.map"
   },
   "entrypoints": [
     "static/css/main.645b577d.css",
-    "static/js/main.79742ce1.js"
+    "static/js/main.8a79ca67.js"
   ]
 }
