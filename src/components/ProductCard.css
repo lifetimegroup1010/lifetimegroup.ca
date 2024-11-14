@@ -1,3 +1,10 @@
+/* Apply box-sizing globally */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /* Parent Container for Product Cards */
 .products-container {
     display: flex;
@@ -6,6 +13,7 @@
     gap: 20px; /* Space between product cards */
     padding: 20px; /* Padding around the container */
     margin-top: 40px; /* Space above the section */
+    overflow: hidden; /* Prevent content overflow */
 }
 
 /* Product Card Styling */
@@ -16,14 +24,15 @@
     padding: 16px;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
-    overflow: hidden; /* Prevent content overflow */
+    overflow: hidden;
     flex: 1 1 calc(33.333% - 20px); /* Responsive three-column layout */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: calc(33.333% - 20px); /* Ensure the width does not exceed container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Increased shadow for more depth */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Image Styling */
@@ -31,11 +40,11 @@
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    transition: transform 0.3s; /* Smooth image zoom effect */
+    transition: transform 0.3s;
 }
 
 .product-card:hover img {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05);
 }
 
 /* Product Title Styling */
@@ -43,19 +52,19 @@
     font-size: 1.25rem;
     color: var(--dark-color);
     margin: 12px 0;
-    transition: color 0.3s; /* Smooth color change effect */
+    transition: color 0.3s;
 }
 
 .product-card:hover h2 {
-    color: var(--primary-color); /* Change title color on hover */
+    color: var(--primary-color);
 }
 
 /* Description Styling */
 .product-card p {
     font-size: 1rem;
     color: var(--text-color);
-    line-height: 1.5; /* Improve readability */
-    margin-bottom: 8px; /* Add space between description and price */
+    line-height: 1.5;
+    margin-bottom: 8px;
 }
 
 /* Price Styling */
@@ -63,11 +72,11 @@
     font-size: 1.1rem;
     color: var(--primary-color);
     font-weight: bold;
-    transition: color 0.3s; /* Smooth color change effect */
+    transition: color 0.3s;
 }
 
 .product-card:hover .price {
-    color: var(--highlight-color); /* Change price color on hover */
+    color: var(--highlight-color);
 }
 
 /* Button Styling */
@@ -84,13 +93,14 @@
 
 .product-card button:hover {
     background-color: var(--highlight-color);
-    transform: translateY(-3px); /* Lift effect on hover */
+    transform: translateY(-3px);
 }
 
 /* Responsive Design Adjustments */
 @media (max-width: 768px) {
     .product-card {
         flex: 1 1 calc(50% - 20px); /* Two products per row on medium screens */
+        max-width: calc(50% - 20px);
         padding: 12px;
     }
 
@@ -109,12 +119,13 @@
 
 @media (max-width: 480px) {
     .products-container {
-        gap: 15px; /* Reduced gap for small screens */
-        padding: 10px; /* Reduced padding for smaller screens */
+        gap: 15px;
+        padding: 10px;
     }
 
     .product-card {
         flex: 1 1 100%; /* One product per row on small screens */
+        max-width: 100%;
         padding: 10px;
     }
 
@@ -131,7 +142,7 @@
     }
 
     .product-card button {
-        padding: 8px 16px; /* Smaller button for better fit */
+        padding: 8px 16px;
         font-size: 0.85rem;
     }
 }
