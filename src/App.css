@@ -25,6 +25,7 @@ html, body {
     background-color: var(--background-color);
     color: var(--text-color);
     overflow-x: hidden;
+    line-height: 1.6; /* Improved readability */
 }
 
 /* App Container */
@@ -42,9 +43,14 @@ html, body {
     margin: 0 auto;
     padding: 20px;
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* Updated border radius for a smoother look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
     overflow: hidden;
+    transition: box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.main-content:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
 }
 
 /* Header and Footer Styles */
@@ -65,17 +71,18 @@ header, footer {
     height: 60px;
     width: auto;
     object-fit: contain;
-    transition: transform 0.3s;
+    transition: transform 0.3s, filter 0.3s;
 }
 
 .logo-link:hover .logo-image {
     transform: scale(1.1);
+    filter: brightness(1.2); /* Brighten logo on hover */
 }
 
 /* Navigation Links */
 .navigation {
     display: flex;
-    flex-wrap: wrap; /* Wrap items on smaller screens */
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
@@ -85,7 +92,7 @@ header, footer {
     color: white;
     font-weight: bold;
     font-size: 1rem;
-    transition: color 0.3s ease, transform 0.2s;
+    transition: color 0.3s, transform 0.2s;
     padding: 8px 12px;
     border-radius: 4px;
 }
@@ -104,12 +111,13 @@ button {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
 }
 
 button:hover {
     background-color: var(--button-hover-color);
     transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow on hover */
 }
 
 /* Product Items and Cart Items */
@@ -120,14 +128,15 @@ button:hover {
     margin: 10px;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, background-color 0.3s;
-    width: calc(100% - 20px); /* Ensure full width minus margin */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    width: calc(100% - 20px);
 }
 
 .product-item:hover, .cart-item:hover {
     transform: translateY(-5px);
     background-color: var(--background-color);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
 }
 
 /* Ensure Images are Responsive */
@@ -135,11 +144,12 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-    transition: transform 0.3s;
+    transition: transform 0.3s, filter 0.3s;
 }
 
 img:hover {
     transform: scale(1.05);
+    filter: brightness(1.1); /* Brighten image on hover */
 }
 
 /* Cart Total Section */
@@ -166,7 +176,7 @@ img:hover {
 
     .product-item, .cart-item {
         margin-bottom: 15px;
-        width: 100%; /* Full width for mobile view */
+        width: 100%;
     }
 
     .logo-image {
@@ -185,7 +195,7 @@ img:hover {
     }
 
     .product-item, .cart-item {
-        width: 100%; /* Full width for smaller screens */
+        width: 100%;
         padding: 10px;
     }
 
@@ -194,7 +204,7 @@ img:hover {
     }
 
     button {
-        width: 100%; /* Full-width button for better usability */
+        width: 100%;
         padding: 8px;
     }
 }

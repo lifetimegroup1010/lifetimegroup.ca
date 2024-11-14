@@ -1,5 +1,6 @@
 // src/components/InquiryForm.js
 import React from 'react';
+import './inquiry.css';
 
 function InquiryForm() {
     return (

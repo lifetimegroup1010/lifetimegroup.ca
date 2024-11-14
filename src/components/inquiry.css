@@ -1,0 +1,28 @@
+
+/* Inquiry Form Container Styling */
+.inquiry-form {
+    background-color: var(--light-color); /* Light background matching your theme */
+    border: 1px solid var(--secondary-color); /* Border color similar to product card */
+    border-radius: 10px; /* Smoother rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: var(--text-color);
+    max-width: 800px; /* Limit the width of the form container */
+    margin: 0 auto; /* Center the form on the page */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.inquiry-form h2 {
+    font-size: 1.8rem;
+    color: var(--dark-color); /* Dark color for the heading */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Iframe Styling */
+.inquiry-form iframe {
+    width: 100%; /* Make iframe take full width of the container */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners for the iframe */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for iframe */
+}
