@@ -11,6 +11,7 @@
     --accent-color: #5B6D49; /* Soft Muted Green */
     --background-color: #F1F2ED; /* Light Off-White */
     --text-color: #2E2D1D; /* Dark Brown Text */
+    --highlight-color: #A2AC82; /* Highlight color for hover effects */
 }
 
 /* Global Styles */
@@ -35,7 +36,6 @@ html, body {
     padding: 15px 30px;
     margin: 0 auto;
     overflow: hidden;
-    box-sizing: border-box;
     background: linear-gradient(135deg, #A2AC82, #0C3C01, #5B6D49); /* Updated gradient */
     color: white;
 }
@@ -53,16 +53,42 @@ html, body {
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Softer shadow */
     backdrop-filter: blur(5px);
-    overflow: hidden;
     animation: fadeIn 0.8s ease-out;
     transition: all 0.3s ease;
 }
 
 .home-content:hover {
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2); /* Elevated shadow on hover */
-    outline: 2px solid transparent; /* Transparent outline */
+    outline: 2px solid transparent;
     outline-offset: -2px;
     border-image: linear-gradient(45deg, #A2AC82, #0C3C01) 1; /* Gradient outline */
+}
+
+/* Inquiry Form Styling */
+.inquiry-form {
+    background-color: var(--light-color); /* Light background to match theme */
+    border: 1px solid var(--secondary-color); /* Border color matching the theme */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 40px auto; /* Center the form with spacing */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.inquiry-title {
+    font-size: 1.8rem;
+    color: black; /* Set the heading color to black */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inquiry-form iframe {
+    width: 100%; /* Full width for responsiveness */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 /* Decorative Divider */
@@ -85,7 +111,7 @@ html, body {
 }
 
 .home-product-title:hover {
-    color: #5B6D49;
+    color: var(--accent-color);
 }
 
 /* Responsive Images */
@@ -93,11 +119,12 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    transition: transform 0.3s;
+    transition: transform 0.3s, filter 0.3s;
 }
 
 img:hover {
     transform: scale(1.05);
+    filter: brightness(1.1); /* Brighten image on hover */
 }
 
 /* Floating Card Effect */
@@ -135,11 +162,12 @@ img:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .cta-section button:hover {
-    background-color: #A2AC82;
+    background-color: var(--highlight-color);
+    transform: scale(1.05);
 }
 
 /* Fade-in Animation */
