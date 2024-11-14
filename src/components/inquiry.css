@@ -14,7 +14,7 @@
 
 .inquiry-form h2 {
     font-size: 1.8rem;
-    color: var(--dark-color); /* Dark color for the heading */
+    color: black; /* Dark color for the heading */
     text-align: center;
     margin-bottom: 20px;
 }
