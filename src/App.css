@@ -89,11 +89,11 @@ header, footer {
     border-radius: 4px;
 }
 
-    .nav-link:hover {
-        color: var(--accent-color);
-        background-color: #5B6D49;
-        transform: translateY(-2px);
-    }
+.nav-link:hover {
+    color: var(--accent-color);
+    background-color: #5B6D49;
+    transform: translateY(-2px);
+}
 
 /* Buttons */
 button {
@@ -106,10 +106,10 @@ button {
     transition: background-color 0.3s, transform 0.2s;
 }
 
-    button:hover {
-        background-color: var(--button-hover-color);
-        transform: scale(1.05);
-    }
+button:hover {
+    background-color: var(--button-hover-color);
+    transform: scale(1.05);
+}
 
 /* Product Items and Cart Items */
 .product-item, .cart-item {
@@ -121,12 +121,13 @@ button {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, background-color 0.3s;
+    width: calc(100% - 20px); /* Ensure full width minus margin */
 }
 
-    .product-item:hover, .cart-item:hover {
-        transform: translateY(-5px);
-        background-color: var(--background-color);
-    }
+.product-item:hover, .cart-item:hover {
+    transform: translateY(-5px);
+    background-color: var(--background-color);
+}
 
 /* Ensure Images are Responsive */
 img {
@@ -136,9 +137,9 @@ img {
     transition: transform 0.3s;
 }
 
-    img:hover {
-        transform: scale(1.05);
-    }
+img:hover {
+    transform: scale(1.05);
+}
 
 /* Cart Total Section */
 .cart-total {
@@ -150,7 +151,7 @@ img {
     padding-top: 10px;
 }
 
-/* Responsive Design */
+/* Responsive Design Adjustments */
 @media (max-width: 768px) {
     .main-content {
         padding: 10px;
@@ -164,6 +165,7 @@ img {
 
     .product-item, .cart-item {
         margin-bottom: 15px;
+        width: calc(100% - 20px); /* Adjust width for mobile view */
     }
 
     .logo-image {
@@ -172,7 +174,26 @@ img {
 }
 
 @media (max-width: 480px) {
-    body {
-        overflow-x: hidden;
+    .main-content {
+        padding: 10px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .product-item, .cart-item {
+        width: 100%; /* Full width for smaller screens */
+        padding: 10px;
+    }
+
+    .logo-image {
+        height: 45px;
+    }
+
+    button {
+        width: 100%; /* Full-width button for better usability */
+        padding: 8px;
     }
 }

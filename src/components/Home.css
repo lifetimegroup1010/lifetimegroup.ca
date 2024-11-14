@@ -24,13 +24,13 @@
     margin: 0 auto;
     text-align: center;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white background */
-    border-radius: 12px; /* Rounded corners for a modern look */
-    border: 2px solid transparent; /* Transparent border to use gradient */
+    background-color: rgba(255, 255, 255, 0.95); /* Frosted white background */
+    border-radius: 12px; /* Rounded corners */
+    border: 2px solid transparent; /* Transparent border */
     border-image: linear-gradient(45deg, #A2AC82, #0C3C01) 1; /* Gradient border */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow for a lifted effect */
-    backdrop-filter: blur(5px); /* Blur effect for a frosted glass look */
-    overflow: hidden; /* Prevent overflow */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Elevated shadow effect */
+    backdrop-filter: blur(5px); /* Blur effect for background */
+    overflow: hidden; /* Prevent content overflow */
     animation: fadeIn 0.8s ease-out; /* Fade-in animation */
 }
 
@@ -39,47 +39,47 @@
     width: 80px;
     height: 4px;
     background: linear-gradient(90deg, #A2AC82, #0C3C01); /* Gradient divider */
-    margin: 20px auto; /* Center the divider */
+    margin: 20px auto; /* Centered divider */
     border-radius: 2px;
 }
 
 /* Product Title Styling */
 .home-product-title {
-    margin-top: 30px; /* Add space between slideshow and title */
-    font-size: 2rem; /* Large font size */
-    font-weight: bold; /* Bold font */
-    color: var(--text-color); /* Darker text for better readability */
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+    margin-top: 30px; /* Space above the title */
+    font-size: 2rem; /* Large title size */
+    font-weight: bold; /* Bold text */
+    color: var(--text-color); /* Darker text color */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     transition: color 0.3s ease; /* Smooth color transition */
 }
 
-    .home-product-title:hover {
-        color: #5B6D49; /* Muted green on hover */
-    }
+.home-product-title:hover {
+    color: #5B6D49; /* Hover effect color */
+}
 
-/* Ensure Images Are Responsive */
+/* Responsive Images */
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Rounded corners for images */
+    border-radius: 8px; /* Rounded image corners */
     transition: transform 0.3s; /* Smooth zoom effect */
 }
 
-    img:hover {
-        transform: scale(1.05); /* Zoom on hover */
-    }
+img:hover {
+    transform: scale(1.05); /* Zoom on hover */
+}
 
 /* Floating Card Effect */
 .floating-card {
     background-color: white;
     border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Soft shadow */
     transition: transform 0.3s;
 }
 
-    .floating-card:hover {
-        transform: translateY(-10px); /* Floating effect */
-    }
+.floating-card:hover {
+    transform: translateY(-10px); /* Float up on hover */
+}
 
 /* Call-to-Action Section */
 .cta-section {
@@ -87,28 +87,28 @@ img {
     color: white;
     padding: 30px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 10px; /* Rounded corners */
     margin-top: 20px;
 }
 
-    .cta-section h2 {
-        font-size: 1.8rem;
-        margin-bottom: 10px;
-    }
+.cta-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
 
-    .cta-section button {
-        background-color: #0C3C01;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
+.cta-section button {
+    background-color: #0C3C01;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-        .cta-section button:hover {
-            background-color: #A2AC82;
-        }
+.cta-section button:hover {
+    background-color: #A2AC82;
+}
 
 /* Fade-in Animation */
 @keyframes fadeIn {
@@ -116,7 +116,6 @@ img {
         opacity: 0;
         transform: translateY(20px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -126,22 +125,22 @@ img {
 /* Responsive Design */
 @media (max-width: 768px) {
     .home-content {
-        width: 95%;
-        padding: 10px;
+        width: 95%; /* Adjusted width for tablets */
+        padding: 10px; /* Reduced padding */
     }
 
     .home-product-title {
-        font-size: 1.8rem; /* Slightly smaller on smaller screens */
+        font-size: 1.8rem; /* Smaller title on tablets */
     }
 }
 
 @media (max-width: 480px) {
     .home-content {
-        width: 90%;
-        padding: 5px;
+        width: 90%; /* Further reduced width for mobile */
+        padding: 5px; /* Minimal padding */
     }
 
     .home-product-title {
-        font-size: 1.6rem; /* Further adjustment for very small screens */
+        font-size: 1.6rem; /* Adjusted font size for small screens */
     }
 }
