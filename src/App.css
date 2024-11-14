@@ -75,6 +75,7 @@ header, footer {
 /* Navigation Links */
 .navigation {
     display: flex;
+    flex-wrap: wrap; /* Wrap items on smaller screens */
     gap: 20px;
     justify-content: center;
 }
@@ -165,7 +166,7 @@ img:hover {
 
     .product-item, .cart-item {
         margin-bottom: 15px;
-        width: calc(100% - 20px); /* Adjust width for mobile view */
+        width: 100%; /* Full width for mobile view */
     }
 
     .logo-image {
