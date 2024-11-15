@@ -51,7 +51,7 @@ function About() {
                             <strong>Phone:</strong> <a href="tel:+16478844589">(647) 884-4589</a>
                         </li>
                         <li>
-                            <strong>Email:</strong> <a href="mailto:info@yourcompany.com">info@yourcompany.com</a>
+                            <strong>Email:</strong> <a href="mailto:info@lifetimegroup.ca">info@lifetimegroup.ca</a>
                         </li>
                     </ul>
                 </section>

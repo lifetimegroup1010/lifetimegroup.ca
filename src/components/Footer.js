@@ -41,13 +41,13 @@ function Footer() {
                 <div className="footer-section">
                     <h3>Follow Us</h3>
                     <p>
-                        <a href="https://www.facebook.com/yourpage" className="social-link" target="_blank" rel="noopener noreferrer">
+                        <a href="" className="social-link" target="_blank" rel="noopener noreferrer">
                             Facebook
                         </a>
-                        <a href="https://twitter.com/yourprofile" className="social-link" target="_blank" rel="noopener noreferrer">
+                        <a href="" className="social-link" target="_blank" rel="noopener noreferrer">
                             Twitter
                         </a>
-                        <a href="https://www.linkedin.com/in/yourprofile" className="social-link" target="_blank" rel="noopener noreferrer">
+                        <a href="" className="social-link" target="_blank" rel="noopener noreferrer">
                             LinkedIn
                         </a>
                     </p>
