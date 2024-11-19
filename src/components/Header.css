@@ -8,7 +8,6 @@
     color: white;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
-    /* Removed sticky positioning */
     z-index: 1000; /* Ensure the header stays above other content */
 }
 
@@ -16,26 +15,24 @@
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 10px; /* Add some space between logo elements */
+    justify-content: center; /* Center the logo horizontally */
 }
 
 .logo-link {
-    display: inline-block;
-    text-decoration: none;
-    background-color: white; /* White background for the logo */
-    padding: 5px; /* Add some padding around the logo for a better look */
-    border-radius: 5px; /* Rounded corners for the logo background */
+    text-decoration: none; /* Remove any link decoration */
 }
 
 .logo-image {
-    height: 60px;
-    width: auto;
-    object-fit: contain;
-    transition: transform 0.3s; /* Smooth zoom effect */
+    height: 80px; /* Increase height for better visibility */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the logo scales nicely */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3)); /* Subtle shadow effect */
+    transition: transform 0.3s, filter 0.3s; /* Smooth hover effect */
 }
 
 .logo-link:hover .logo-image {
-    transform: scale(1.1); /* Zoom effect on hover */
+    transform: scale(1.05); /* Subtle zoom effect on hover */
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5)); /* Enhance shadow on hover */
 }
 
 /* Navigation Styling */
@@ -72,15 +69,25 @@
         flex-direction: column;
         gap: 15px; /* Increase gap for better spacing */
     }
+
+    .nav-link {
+        padding: 10px 15px; /* Increase padding for easier tapping */
+    }
 }
 
 /* Further Adjustments for Very Small Screens */
 @media (max-width: 480px) {
     .logo-image {
-        height: 50px; /* Reduce logo size for smaller screens */
+        height: 70px; /* Reduce logo size slightly for very small screens */
     }
 
     .nav-link {
         font-size: 0.9rem; /* Adjust font size for readability */
+        padding: 8px 10px; /* Adjust padding to fit smaller screens */
+    }
+
+    .navigation {
+        gap: 10px; /* Reduce gap to accommodate smaller screens */
     }
 }
+

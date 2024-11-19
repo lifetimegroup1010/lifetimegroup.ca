@@ -114,10 +114,11 @@ html, body {
     color: var(--accent-color);
 }
 
-/* Responsive Images */
+/* Image Styling */
 img {
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Ensure images fully fill their container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container without distortion */
     border-radius: 8px;
     transition: transform 0.3s, filter 0.3s;
 }
@@ -217,4 +218,24 @@ img:hover {
     .cta-section {
         padding: 20px;
     }
+}
+/* Price List Button Styling */
+.price-list-link {
+    display: inline-block;
+    background-color: var(--accent-color); /* Use the accent color for the button */
+    color: white; /* White text for good contrast */
+    font-size: 1.1rem; /* Slightly larger font size */
+    font-weight: bold;
+    text-decoration: none; /* Remove default link underline */
+    padding: 12px 24px; /* Add padding for a button-like look */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px 0; /* Add some margin for spacing */
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transition for hover effect */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    text-align: center; /* Center the text */
+}
+
+.price-list-link:hover {
+    background-color: #5B6D49; /* Darker shade on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
 }

@@ -6,7 +6,7 @@ function Cart({ cartItems, removeFromCart, updateCartItemQuantity }) {
     const calculateTotalPrice = () => {
         return cartItems
             .reduce((acc, item) => {
-                if (item.selectedOption) {
+                if (item.selectedOption && item.selectedOption.price) {
                     const itemTotal = item.selectedOption.price * item.quantity;
                     return acc + itemTotal;
                 }
@@ -46,12 +46,12 @@ function Cart({ cartItems, removeFromCart, updateCartItemQuantity }) {
                                         onChange={(e) => handleQuantityChange(e, item)}
                                     />
                                 </div>
-                                {item.selectedOption && (
+                                {item.selectedOption && item.selectedOption.price !== undefined && (
                                     <p>
                                         Price per Unit: ${item.selectedOption.price.toFixed(2)}
                                     </p>
                                 )}
-                                {item.selectedOption && (
+                                {item.selectedOption && item.selectedOption.price !== undefined && (
                                     <p>
                                         Total: $
                                         {(item.selectedOption.price * item.quantity).toFixed(2)}
