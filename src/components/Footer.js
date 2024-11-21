@@ -17,7 +17,7 @@ function Footer() {
                         Phone: <a href="tel:+16478844589">(647) 884-4589</a>
                     </p>
                     <p>
-                        Email: <a href="mailto:info@lifetimegroup.ca">info@lifetimegroup.ca.com</a>
+                        Email: <a href="mailto:info@lifetimegroupca.com">info@lifetimegroupca.com</a>
                     </p>
                 </div>
 
@@ -26,10 +26,10 @@ function Footer() {
                     <h3>Business Hours</h3>
                     <ul>
                         <li>
-                            <strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM
+                            <strong>Monday - Friday:</strong> 10:00 AM - 5:00 PM
                         </li>
                         <li>
-                            <strong>Saturday:</strong> 10:00 AM - 2:00 PM
+                            <strong>Saturday:</strong> Closed
                         </li>
                         <li>
                             <strong>Sunday:</strong> Closed
